@@ -1,5 +1,5 @@
 if not _G.CustomUI then _G.CustomUI = false end
-VERSION = "2"
+VERSION = "Cracked"
 
 if AlreadyLoaded then
     return 
@@ -7,10 +7,10 @@ end
 getgenv().AlreadyLoaded = true -- So that you can't execute the script twice
 
 if not game:IsLoaded() then
-  print("Tuberss Admin is waiting for the game to load..")
+  print("HomeBrew Cracked is waiting for the game to load..")
 	game.Loaded:Wait()
 end
-prefix = ";" -- After running hb admin for the first time changing this won't do anything.
+prefix = "." -- After running hb admin for the first time changing this won't do anything.
 local Players = game:GetService("Players") -- pls use this incase the game devs rename Players to something else
 local Player = Players.LocalPlayer
 function _G.getPlayer(shortcut)
@@ -81,7 +81,7 @@ function _G.notify(text) -- Notification system with args as text
     TextLabel.Size = UDim2.new(0, 131, 0, 36)
     TextLabel.ZIndex = 2
     TextLabel.Font = Enum.Font.GothamBlack
-    TextLabel.Text = "Tubers Admin"
+    TextLabel.Text = "HomeBrew Cracked"
     TextLabel.TextColor3 = Color3.fromRGB(255, 25, 25)
     TextLabel.TextSize = 16.000
     PenumbraShadow.Name = "PenumbraShadow"
@@ -159,7 +159,7 @@ local Chanelog = Instance.new("TextLabel")
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
-ScreenGui.Name = "TA Logs"
+ScreenGui.Name = "HBC Logs"
 
 Changelog.Name = "Changelog"
 Changelog.Parent = ScreenGui
@@ -201,7 +201,7 @@ CMDTITLE.Position = UDim2.new(0.362217844, 0, 0.074537456, 0)
 CMDTITLE.Size = UDim2.new(0, 131, 0, 36)
 CMDTITLE.ZIndex = 2
 CMDTITLE.Font = Enum.Font.GothamBlack
-CMDTITLE.Text = "Tubers Admin"
+CMDTITLE.Text = "HomeBrew Cracked"
 CMDTITLE.TextColor3 = Color3.fromRGB(255, 25, 25)
 CMDTITLE.TextSize = 20.000
 
@@ -1070,7 +1070,7 @@ CMDTITLE.Position = UDim2.new(0.362217844, 0, 0.074537456, 0)
 CMDTITLE.Size = UDim2.new(0, 131, 0, 36)
 CMDTITLE.ZIndex = 2
 CMDTITLE.Font = Enum.Font.GothamBlack
-CMDTITLE.Text = "Tubers Admin"
+CMDTITLE.Text = "HomeBrew Cracked"
 CMDTITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
 CMDTITLE.TextSize = 20.000
 
@@ -2402,7 +2402,7 @@ local function Fly()
   local pos = Instance.new("BodyPosition", Part)
   local gyro = Instance.new("BodyGyro", Part)
 
-  pos.Name = "tubers admin"
+  pos.Name = "HomeBrew Cracked"
   gyro.Name = "winning"
   pos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
   pos.Position = HumanoidRootPart.Position
@@ -2588,7 +2588,7 @@ user = getPlayer(user)
 _G.removeadmin(user.Name)
 pcall(
 function()
-  whisper(user, "[TA] Your access to Tubers Admin has been removed.")
+  whisper(user, "[HBC] Your access to HomeBrew Cracked has been removed.")
 end
 )
 end
@@ -2743,7 +2743,7 @@ else
       if not name == Player.Name then
         notify("Successfully whitelisted " .. name .. "!")
       end
-      whisper(user, "[TA] You have been given access to Tubers Admin commands.")
+      whisper(user, "[HBC] You have been given access to HomeBrew Cracked commands.")
     else
       notify("Couldn't whitelist " .. name .. "!")
     end
@@ -2840,7 +2840,7 @@ local ImageLabel_2 = Instance.new("ImageLabel")
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
-ScreenGui.Name = "TAdmin"
+ScreenGui.Name = "HBCracked"
 Frame.AnchorPoint = Vector2.new(.5, .5)
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 25, 25)
@@ -2875,7 +2875,7 @@ TextLabel.TextTransparency = 0.400
 
 function fireui()
   TextLabel.Text = prefix
-  TextBox.PlaceholderText = "Type " .. '"' .. prefix .. '"' .. " to start Tubers Admin"
+  TextBox.PlaceholderText = "Type " .. '"' .. prefix .. '"' .. " to start HomeBrew Cracked"
 end
 Frame_3.Name = "Frame"
 Frame_3.Parent = Frame
@@ -2917,7 +2917,7 @@ TextBox.BackgroundTransparency = 1.000
 TextBox.Position = UDim2.new(0.0378378369, 0, 0, 0)
 TextBox.Size = UDim2.new(0, 712, 0, 39)
 TextBox.Font = Enum.Font.SourceSans
-TextBox.PlaceholderText = "Type " .. '"' .. prefix .. '"' .. " to start Homebrew Admin"
+TextBox.PlaceholderText = "Type " .. '"' .. prefix .. '"' .. " to start Homebrew Cracked"
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 14.000
@@ -2953,7 +2953,7 @@ TextLabel_3.Position = UDim2.new(0.0646068305, 0, 0.0693927407, 0)
 TextLabel_3.Size = UDim2.new(0, 131, 0, 36)
 TextLabel_3.ZIndex = 2
 TextLabel_3.Font = Enum.Font.GothamBlack
-TextLabel_3.Text = "Tubers Admin"
+TextLabel_3.Text = "HomeBrew Cracked"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 16.000
 
@@ -2990,7 +2990,7 @@ TextLabel_5.Position = UDim2.new(0.418539405, 0, 0.632441521, 0)
 TextLabel_5.Size = UDim2.new(0, 56, 0, 9)
 TextLabel_5.ZIndex = 2
 TextLabel_5.Font = Enum.Font.Gotham
-TextLabel_5.Text = "Welcome to T Admin"
+TextLabel_5.Text = "Welcome to HB Cracked"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextSize = 14.000
 
@@ -3013,7 +3013,7 @@ ImageLabel_2.ZIndex = 2
 ImageLabel_2.Image = "http://www.roblox.com/asset/?id=217370037"
 ImageLabel_2.ImageTransparency = 0.600
 
-local function gui() -- Commands.ExoIiner.custom toggle
+local function gui()--.Commands.ExoIiner.custom.toggle
   local script = Instance.new("LocalScript", Frame)
 
   framed = script.Parent
@@ -3189,7 +3189,7 @@ CMDTITLE.Position = UDim2.new(0.296868026, 0, 0.104656965, 0)
 CMDTITLE.Size = UDim2.new(0, 131, 0, 36)
 CMDTITLE.ZIndex = 2
 CMDTITLE.Font = Enum.Font.GothamBlack
-CMDTITLE.Text = "Tubers Admin"
+CMDTITLE.Text = "HomeBrew Cracked"
 CMDTITLE.TextColor3 = Color3.fromRGB(255, 25, 25)
 CMDTITLE.TextSize = 20.000
 
@@ -3434,4 +3434,4 @@ game.CoreGui.CMDS.CmdList.Visible = true
 game.CoreGui.CMDS.CmdList:TweenSize(UDim2.new(0, 327, 0, 271), "Out", "Quad", 0.3, false)
 end
 )
-notify("Tubers Admin has loaded! " .. #commands .. " commands.")
+notify("HomeBrew Cracked has loaded! " .. #commands .. " commands.")
